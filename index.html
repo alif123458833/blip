@@ -1,0 +1,350 @@
+<!-- FOOD SCREEN -->
+
+<div class="screen" id="foodScreen">
+
+<div class="container">
+
+<h2>🍔 Order Makanan Kantin</h2>
+
+<div id="liveClock"
+style="
+text-align:center;
+font-size:20px;
+margin-bottom:20px;
+font-weight:bold;">
+</div>
+
+<!-- MAKANAN -->
+
+<div class="food-card">
+<h3>Nasi Lemak</h3>
+<p>RM3.50</p>
+<button onclick="orderFood('Nasi Lemak')">
+Order
+</button>
+</div>
+
+<div class="food-card">
+<h3>Nasi Goreng</h3>
+<p>RM5.00</p>
+<button onclick="orderFood('Nasi Goreng')">
+Order
+</button>
+</div>
+
+<div class="food-card">
+<h3>Mee Goreng</h3>
+<p>RM4.50</p>
+<button onclick="orderFood('Mee Goreng')">
+Order
+</button>
+</div>
+
+<div class="food-card">
+<h3>Bihun Goreng</h3>
+<p>RM4.00</p>
+<button onclick="orderFood('Bihun Goreng')">
+Order
+</button>
+</div>
+
+<div class="food-card">
+<h3>Chicken Chop</h3>
+<p>RM8.00</p>
+<button onclick="orderFood('Chicken Chop')">
+Order
+</button>
+</div>
+
+<div class="food-card">
+<h3>Burger Ayam</h3>
+<p>RM4.50</p>
+<button onclick="orderFood('Burger Ayam')">
+Order
+</button>
+</div>
+
+<div class="food-card">
+<h3>Hotdog</h3>
+<p>RM3.50</p>
+<button onclick="orderFood('Hotdog')">
+Order
+</button>
+</div>
+
+<div class="food-card">
+<h3>Nugget</h3>
+<p>RM3.00</p>
+<button onclick="orderFood('Nugget')">
+Order
+</button>
+</div>
+
+<div class="food-card">
+<h3>Roti John</h3>
+<p>RM5.50</p>
+<button onclick="orderFood('Roti John')">
+Order
+</button>
+</div>
+
+<div class="food-card">
+<h3>Teh Ais</h3>
+<p>RM2.50</p>
+<button onclick="orderFood('Teh Ais')">
+Order
+</button>
+</div>
+
+<div class="food-card">
+<h3>Milo Ais</h3>
+<p>RM3.00</p>
+<button onclick="orderFood('Milo Ais')">
+Order
+</button>
+</div>
+
+<div class="food-card">
+<h3>Jus Oren</h3>
+<p>RM3.00</p>
+<button onclick="orderFood('Jus Oren')">
+Order
+</button>
+</div>
+
+<!-- SUCCESS -->
+
+<div class="success"
+id="foodSuccess">
+</div>
+
+<!-- QR PAYMENT -->
+
+<div class="food-card">
+
+<h3>💳 QR Payment</h3>
+
+<img
+src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=PEMBAYARAN-KANTIN"
+style="
+width:100%;
+border-radius:20px;">
+
+<p style="text-align:center;">
+Scan QR selepas order makanan
+</p>
+
+</div>
+
+<button onclick="showScreen('menuScreen')">
+⬅ Kembali
+</button>
+
+</div>
+
+</div>
+
+<!-- WEATHER SCREEN -->
+
+<div class="screen"
+id="weatherScreen">
+
+<div class="container">
+
+<h2>🌦️ Cuaca Live</h2>
+
+<div class="food-card">
+
+<h3 id="weatherStatus">
+☀️ Cerah
+</h3>
+
+<p id="temperature">
+31°C
+</p>
+
+</div>
+
+<div class="food-card">
+<h3>💨 Kelajuan Angin</h3>
+<p>15 km/h</p>
+</div>
+
+<div class="food-card">
+<h3>💧 Kelembapan</h3>
+<p>78%</p>
+</div>
+
+<div class="food-card">
+<h3>🌡️ Suhu Maksimum</h3>
+<p>34°C</p>
+</div>
+
+<div class="food-card">
+<h3>🌙 Suhu Malam</h3>
+<p>26°C</p>
+</div>
+
+<div class="food-card">
+<h3>☔ Peluang Hujan</h3>
+<p>40%</p>
+</div>
+
+<button onclick="showScreen('menuScreen')">
+⬅ Kembali
+</button>
+
+</div>
+
+</div>
+
+<!-- ADMIN SCREEN -->
+
+<div class="screen"
+id="adminScreen">
+
+<div class="container">
+
+<h2>📊 Admin Panel Premium</h2>
+
+<!-- PELAWAT -->
+
+<div class="food-card">
+<h3>👥 Jumlah Pelawat Hari Ini</h3>
+<p>35 Pelawat Hadir</p>
+</div>
+
+<!-- BAS -->
+
+<div class="food-card">
+<h3>🚌 Info Bas Sekolah</h3>
+
+<p>Bas A keluar: 6:30 pagi</p>
+<p>Bas B keluar: 6:45 pagi</p>
+<p>Bas balik: 2:30 petang</p>
+
+</div>
+
+<!-- STATUS BAS -->
+
+<div class="food-card">
+<h3>🚌 Status Bas</h3>
+<p>Bas A sedang bergerak</p>
+</div>
+
+<!-- CUACA -->
+
+<div class="food-card">
+<h3>🌦️ Cuaca Sekolah</h3>
+<p>☀️ Cerah - 31°C</p>
+</div>
+
+<!-- AKTIVITI -->
+
+<div class="food-card">
+<h3>🎓 Aktiviti Sekolah</h3>
+<p>Hari Sukan - Jumaat</p>
+<p>Program Motivasi - Isnin</p>
+</div>
+
+<!-- GURU -->
+
+<div class="food-card">
+<h3>🧑‍🏫 Kehadiran Guru</h3>
+<p>45/48 Guru Hadir</p>
+</div>
+
+<!-- GURU BERTUGAS -->
+
+<div class="food-card">
+<h3>📚 Guru Bertugas</h3>
+<p>Cikgu Ahmad</p>
+</div>
+
+<!-- CCTV -->
+
+<div class="food-card">
+<h3>📸 CCTV Sekolah</h3>
+<p>Aktif & Online</p>
+</div>
+
+<!-- INTERNET -->
+
+<div class="food-card">
+<h3>🌐 Internet Sekolah</h3>
+<p>✅ Stabil</p>
+</div>
+
+<!-- PENGUMUMAN -->
+
+<div class="food-card">
+<h3>🔔 Pengumuman</h3>
+<p>Perhimpunan pagi esok</p>
+</div>
+
+<!-- KEHADIRAN -->
+
+<div class="food-card">
+<h3>👨‍🎓 Kehadiran Pelajar</h3>
+<p>95% Hadir Hari Ini</p>
+</div>
+
+<!-- STATISTIK -->
+
+<div class="food-card">
+
+<h3>📈 Statistik Pelawat</h3>
+
+<div style="
+display:flex;
+gap:10px;
+align-items:end;
+height:120px;
+margin-top:10px;">
+
+<div style="
+background:#3b82f6;
+height:60px;
+width:30px;
+border-radius:8px;">
+</div>
+
+<div style="
+background:#60a5fa;
+height:90px;
+width:30px;
+border-radius:8px;">
+</div>
+
+<div style="
+background:#93c5fd;
+height:70px;
+width:30px;
+border-radius:8px;">
+</div>
+
+<div style="
+background:#2563eb;
+height:110px;
+width:30px;
+border-radius:8px;">
+</div>
+
+</div>
+
+</div>
+
+<!-- STATUS -->
+
+<div class="food-card">
+<h3>Status Sistem</h3>
+<p>✅ Online</p>
+</div>
+
+<button onclick="showScreen('menuScreen')">
+⬅ Kembali
+</button>
+
+</div>
+
+</div>
